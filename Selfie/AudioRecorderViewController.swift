@@ -87,9 +87,7 @@ class AudioRecorderViewController: UIViewController, AVAudioRecorderDelegate {
             RecordReminder.text = "00:0" + String(count)
         }
         else if (count == 0){
-            countdown?.invalidate()
-            countdown = nil
-            count = -1
+            
             finishRecording(success: true)
 //            RecordReminder.text = "Tap to Re-record"
 //        continueButton.setTitleColor(UIColor.black, for: .normal)
@@ -102,13 +100,15 @@ class AudioRecorderViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     func finishRecording(success: Bool) {
-        print ("Stopped here once")
         audioRecorder.stop()
         audioRecorder = nil
         
         if success {
-            RecordReminder.text = "Tap to Re-record"
+            RecordReminder.text = "Successful!! Tap to Re-record"
             continueButton.setTitleColor(UIColor.black, for: .normal)
+            countdown?.invalidate()
+            countdown = nil
+            count = -1
         } else {
             RecordReminder.text = "Record an audio to start Voime"
             // recording failed :(
