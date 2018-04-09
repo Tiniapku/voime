@@ -9,7 +9,7 @@
 import UIKit
 
 class AudioPlayerViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,8 +20,24 @@ class AudioPlayerViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func recordAudio(_ sender: Any) {
+        print("start record...")
+        timeCounter.text = "00:" + String(count)
+        timeCounter.textColor = UIColor.black
+        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(update_time), userInfo: nil, repeats: true)
+        
+        
+    }
+    var count = 10
+    func update_time() {
+        if (count > 0) {
+            count -= 1
+            timeCounter.text = "00:0" + String(count)
+        }
+    }
     
-
+    @IBOutlet weak var timeCounter: UILabel!
+    
     /*
     // MARK: - Navigation
 
