@@ -96,7 +96,7 @@ class AudioRecorderViewController: UIViewController, AVAudioRecorderDelegate {
     }
     func getDocumentsDirectory() -> URL {
 //        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return URL(string: "file:///Users/tianyi/Documents/18Winter/SI660/voime/starter/Selfie/audios")!
+        return URL(string: "file:///Users/tianyi/Documents/18Winter/SI660/voime/starter/Selfie/audios/user1")!
     }
     
     func finishRecording(success: Bool) {
@@ -105,7 +105,7 @@ class AudioRecorderViewController: UIViewController, AVAudioRecorderDelegate {
         
         if success {
             RecordReminder.text = "Successful!! Tap to Re-record"
-            continueButton.setTitleColor(UIColor.black, for: .normal)
+            continueButton.setTitleColor(UIColor.white, for: .normal)
             countdown?.invalidate()
             countdown = nil
             count = -1

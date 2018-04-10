@@ -169,33 +169,43 @@
             </objects>
             <point key="canvasLocation" x="-797" y="-1054"/>
         </scene>
-        <!--Audio Recorder View Controller-->
+        <!--Audio Record-->
         <scene sceneID="mpv-qL-rrO">
             <objects>
-                <viewController id="3kx-sr-ekf" customClass="AudioRecorderViewController" customModule="Selfie" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="NFj-Fj-ltF">
+                <viewController title="Audio Record" id="3kx-sr-ekf" customClass="AudioRecorderViewController" customModule="Selfie" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="NFj-Fj-ltF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="69S-IS-wFx">
-                                <rect key="frame" x="129" y="390" width="62" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="match" id="5iz-2S-eTv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="XzK-Kq-J9g">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="69S-IS-wFx">
+                                <rect key="frame" x="107" y="390" width="106" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Continue">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="1" green="0.33333333329999998" blue="0.32156862749999998" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="kt3-Mi-CFI" kind="modal" id="K1x-8Z-3mt"/>
+                                    <segue destination="uPB-AA-WSd" kind="modal" id="gWa-dX-uKo"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Record an audio to start Voime" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vqg-jL-eQx">
-                                <rect key="frame" x="42" y="233" width="236" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Record an audio to start Voime" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" id="Vqg-jL-eQx">
+                                <rect key="frame" x="21" y="232" width="278" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="0.6993257705479452" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
                         <outlet property="RecordReminder" destination="Vqg-jL-eQx" id="Xwh-Fu-xLz"/>
@@ -206,65 +216,165 @@
             </objects>
             <point key="canvasLocation" x="-361" y="-1054"/>
         </scene>
-        <!--Audio Player View Controller-->
-        <scene sceneID="z8Z-O1-9Tr">
+        <!--Profile-->
+        <scene sceneID="oLr-CN-QgU">
             <objects>
-                <viewController title="Audio Player View Controller" id="kt3-Mi-CFI" customClass="AudioPlayerViewController" customModule="Selfie" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="L2a-N2-dn8">
+                <viewController id="gjo-1a-cxp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pNX-gC-8fo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="center" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hC1-Yl-Py1" userLabel="play">
-                                <rect key="frame" x="106" y="430" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="play"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vpN-vI-1yR" userLabel="reverse">
-                                <rect key="frame" x="16" y="418" width="66" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="reverse"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oZT-Qb-n7X" userLabel="like">
-                                <rect key="frame" x="184" y="437" width="34" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="like_grey"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0dc-9W-hsX" userLabel="recordAudio">
-                                <rect key="frame" x="264" y="431" width="32" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="voice"/>
-                                <connections>
-                                    <action selector="recordAudio:" destination="kt3-Mi-CFI" eventType="touchUpInside" id="8i6-NH-8fJ"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JfF-Km-pUB">
-                                <rect key="frame" x="252" y="476" width="73" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="right" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LD4-05-Cz7">
+                                <rect key="frame" x="139" y="288" width="36" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="ic_account_circle_grey_46px" selectedImage="ic_account_circle_black_46px" id="M6q-x9-XS7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cg1-j1-L7K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-577" y="950"/>
+        </scene>
+        <!--Message-->
+        <scene sceneID="SVM-eM-3AO">
+            <objects>
+                <viewController id="Pul-Ls-L6F" customClass="TableViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7MN-pV-FrA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Message" image="ic_message_grey_46px" selectedImage="ic_message_black_46px" id="btd-2b-FDQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="teb-QB-h3d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-80" y="-356"/>
+        </scene>
+        <!--Voime-->
+        <scene sceneID="4yW-JT-YRb">
+            <objects>
+                <viewController id="OZy-e5-gDn" customClass="MatchingViewController" customModule="Selfie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AGE-tj-Wpx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="KGj-Of-BPb" userLabel="Cancle">
+                                <rect key="frame" x="163" y="383" width="71" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="dislike"/>
+                                <connections>
+                                    <action selector="playNextButton:" destination="OZy-e5-gDn" eventType="touchUpInside" id="her-Jc-jXW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="o6u-dU-YKZ" userLabel="Voice">
+                                <rect key="frame" x="242" y="392" width="62" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="voice"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RKk-Jc-mg6" userLabel="Like">
+                                <rect key="frame" x="84" y="383" width="71" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="like"/>
+                                <connections>
+                                    <action selector="like:" destination="OZy-e5-gDn" eventType="touchUpInside" id="6XZ-dE-wLA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gam-W5-8Vh" userLabel="Reverse">
+                                <rect key="frame" x="14" y="392" width="62" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="reverse"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="7lc-KD-u4V">
+                                <rect key="frame" x="0.0" y="44" width="320" height="331"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" id="lH9-S7-Ql0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Matching" id="aqD-dA-dX4"/>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="GSz-L2-zZb">
+                                <rect key="frame" x="15" y="64" width="290" height="257"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Vincent, 25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Yqn-SF-bjK">
+                                <rect key="frame" x="34" y="329" width="88" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nki-di-PGQ" userLabel="Play">
+                                <rect key="frame" x="34" y="233" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="pause">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pause:" destination="OZy-e5-gDn" eventType="touchUpInside" id="51I-eF-b8W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.88259548611111116" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Voime" id="VeX-WJ-FeE"/>
                     <connections>
-                        <outlet property="timeCounter" destination="JfF-Km-pUB" id="FQy-CL-QHl"/>
+                        <outlet property="likeButton" destination="RKk-Jc-mg6" id="gRU-Bp-Rwy"/>
+                        <outlet property="playButton" destination="nki-di-PGQ" id="41e-XO-7PO"/>
+                        <outlet property="profile_pic" destination="GSz-L2-zZb" id="1AJ-hR-3O4"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Heo-wi-r0x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TDG-ZC-NfZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="89" y="-1054"/>
+            <point key="canvasLocation" x="-292" y="292"/>
+        </scene>
+        <!--MyNavigationView-->
+        <scene sceneID="VBJ-Zc-hOP">
+            <objects>
+                <tabBarController title="MyNavigationView" id="uPB-AA-WSd" customClass="MyNavigationViewController" customModule="Selfie" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TPL-ji-e0v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="1" green="0.33333333329999998" blue="0.32156862749999998" alpha="0.75072238869999997" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="selectedIndex">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="Pul-Ls-L6F" kind="relationship" relationship="viewControllers" id="xkG-h4-HJE"/>
+                        <segue destination="OZy-e5-gDn" kind="relationship" relationship="viewControllers" id="ZYL-qy-nTT"/>
+                        <segue destination="gjo-1a-cxp" kind="relationship" relationship="viewControllers" id="uRM-KN-WVJ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Drf-Pp-7If" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-797" y="34"/>
         </scene>
     </scenes>
     <resources>
         <image name="background" width="320" height="568"/>
+        <image name="dislike" width="213" height="213"/>
         <image name="eye" width="32" height="32"/>
         <image name="eye_off" width="32" height="32"/>
-        <image name="like_grey" width="81" height="81"/>
-        <image name="play" width="90" height="108"/>
-        <image name="reverse" width="186" height="186"/>
-        <image name="voice" width="54" height="75"/>
+        <image name="ic_account_circle_black_46px" width="40" height="40"/>
+        <image name="ic_account_circle_grey_46px" width="40" height="40"/>
+        <image name="ic_message_black_46px" width="40" height="40"/>
+        <image name="ic_message_grey_46px" width="40" height="40"/>
+        <image name="like" width="213" height="213"/>
+        <image name="match" width="750" height="1334"/>
+        <image name="pause" width="512" height="512"/>
+        <image name="reverse" width="62" height="62"/>
+        <image name="voice" width="186" height="186"/>
     </resources>
 </document>

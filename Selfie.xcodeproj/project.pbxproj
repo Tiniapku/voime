@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		052ADB0E20773DA000B17A9B /* AudioPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052ADB0D20773DA000B17A9B /* AudioPlayerViewController.swift */; };
 		052ADB10207B204900B17A9B /* AudioRecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052ADB0F207B204900B17A9B /* AudioRecorderViewController.swift */; };
+		056B9529207C5B1200741F89 /* MyNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056B9528207C5B1200741F89 /* MyNavigationViewController.swift */; };
+		056B952B207D57D200741F89 /* MatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056B952A207D57D200741F89 /* MatchingViewController.swift */; };
 		05FE50C12071775900780487 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FE50C02071775900780487 /* Constants.swift */; };
 		C186CA0E19EA299B00E3B500 /* SelfieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C186CA0D19EA299B00E3B500 /* SelfieCollectionViewCell.swift */; };
 		C186CA1019EA34DF00E3B500 /* SelfieImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C186CA0F19EA34DF00E3B500 /* SelfieImage.swift */; };
@@ -40,8 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		052ADB0D20773DA000B17A9B /* AudioPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AudioPlayerViewController.swift; path = Selfie/AudioPlayerViewController.swift; sourceTree = SOURCE_ROOT; };
 		052ADB0F207B204900B17A9B /* AudioRecorderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorderViewController.swift; sourceTree = "<group>"; };
+		056B9528207C5B1200741F89 /* MyNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationViewController.swift; sourceTree = "<group>"; };
+		056B952A207D57D200741F89 /* MatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingViewController.swift; sourceTree = "<group>"; };
 		05FE50C02071775900780487 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C186CA0D19EA299B00E3B500 /* SelfieCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieCollectionViewCell.swift; sourceTree = "<group>"; };
 		C186CA0F19EA34DF00E3B500 /* SelfieImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieImage.swift; sourceTree = "<group>"; };
@@ -138,7 +140,6 @@
 				05FE50BF2071773A00780487 /* Util */,
 				D308C7F119B4768300AE6BE5 /* AESCrypt */,
 				C1B77A6B1A1B98DB0024857B /* HTTPHelper.swift */,
-				052ADB0D20773DA000B17A9B /* AudioPlayerViewController.swift */,
 				C1F59B1619E4084C0083F33B /* KeychainAccess.swift */,
 				D37383E419B07A75008C2DB6 /* AppDelegate.swift */,
 				D37383E619B07A75008C2DB6 /* ViewController.swift */,
@@ -147,7 +148,9 @@
 				C186CA0F19EA34DF00E3B500 /* SelfieImage.swift */,
 				C186CA1119EA80DB00E3B500 /* ComposeViewController.swift */,
 				C186CA1519EA92C600E3B500 /* DetailViewController.swift */,
+				056B9528207C5B1200741F89 /* MyNavigationViewController.swift */,
 				052ADB0F207B204900B17A9B /* AudioRecorderViewController.swift */,
+				056B952A207D57D200741F89 /* MatchingViewController.swift */,
 				D37383E819B07A75008C2DB6 /* Main.storyboard */,
 				D37383EB19B07A75008C2DB6 /* Images.xcassets */,
 				D37383E219B07A75008C2DB6 /* Supporting Files */,
@@ -285,7 +288,7 @@
 			files = (
 				C186CA1619EA92C600E3B500 /* DetailViewController.swift in Sources */,
 				C1B77A6C1A1B98DB0024857B /* HTTPHelper.swift in Sources */,
-				052ADB0E20773DA000B17A9B /* AudioPlayerViewController.swift in Sources */,
+				056B9529207C5B1200741F89 /* MyNavigationViewController.swift in Sources */,
 				D373840219B07C3B008C2DB6 /* SelfieCollectionViewController.swift in Sources */,
 				D37383E719B07A75008C2DB6 /* ViewController.swift in Sources */,
 				D308C7FA19B4768300AE6BE5 /* AESCrypt.m in Sources */,
@@ -295,6 +298,7 @@
 				052ADB10207B204900B17A9B /* AudioRecorderViewController.swift in Sources */,
 				D308C7FD19B4768300AE6BE5 /* NSString+Base64.m in Sources */,
 				D308C7FB19B4768300AE6BE5 /* NSData+Base64.m in Sources */,
+				056B952B207D57D200741F89 /* MatchingViewController.swift in Sources */,
 				D308C7FC19B4768300AE6BE5 /* NSData+CommonCrypto.m in Sources */,
 				05FE50C12071775900780487 /* Constants.swift in Sources */,
 				C1F59B1719E4084C0083F33B /* KeychainAccess.swift in Sources */,
