@@ -9,24 +9,42 @@
 import UIKit
 import AVFoundation
 //TODO get a name list
-class MatchingViewController: UIViewController, AVAudioPlayerDelegate{
+class MatchingViewController: UIViewController {
 
     var Player = AVAudioPlayer()
     var playState = 1
-    var likeState = [Int](repeating:0, count:8)
+    var userCount:Int = 4
+    var likeState = [Int](repeating:0, count:4)
+    var matchState = [Int]()
+    var names = ["Vincent, 25",
+        "Dylan, 22",
+        "Andrew, 26",
+        "Eric, 29",
+        "Michael, 28",
+        "Sean, 27"
+        ]
     var alreadySeen = [Int]()
-    var audioIndex = Int(arc4random_uniform(8) + 1)
+    var audioIndex = Int(arc4random_uniform(4) + 1)
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var profile_pic: UIImageView!
     
     @IBOutlet weak var likeButton: UIButton!
+    @IBOutlet weak var profile_name: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        for _ in 0..<userCount {
+            matchState.append(Int(arc4random_uniform(2)))
+        }
+        print (matchState)
+        alreadySeen = []
         playNext()
         
     }
 
+    @IBAction func modalStopPlay(_ sender: Any) {
+        Player.pause()
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -55,7 +73,7 @@ class MatchingViewController: UIViewController, AVAudioPlayerDelegate{
     }
     
     func getAudioName(num: Int) -> String {
-        let curAudioName = "audio" + String(num) + ".m4a"
+        let curAudioName = "voice" + String(num) + ".mp3"
         return curAudioName
     }
     
@@ -66,14 +84,11 @@ class MatchingViewController: UIViewController, AVAudioPlayerDelegate{
     }
     @IBAction func like(_ sender: Any) {
         //TODO: create a like_grey image
-        if likeState[audioIndex] == 0 {
-            // like the person, unveil the image
-            let unveilImage = UIImage(named: String(audioIndex))
-            profile_pic.image = unveilImage
-        }
-        else {
-            let veilImage = UIImage(named: getCoverImage(num: audioIndex))
-            profile_pic.image=veilImage
+        print (matchState)
+        if (matchState[audioIndex - 1] == 1) || (audioIndex == 4) {
+        // matched, unveil the image
+        let unveilImage = UIImage(named: String(audioIndex))
+        profile_pic.image = unveilImage
         }
     }
     
@@ -83,24 +98,27 @@ class MatchingViewController: UIViewController, AVAudioPlayerDelegate{
         
         while alreadySeen.contains(audioIndex)
          {
-        audioIndex = Int(arc4random_uniform(8) + 1)
+        audioIndex = Int(arc4random_uniform(UInt32(userCount)) + 1)
         }
         let coverImageName = getCoverImage(num: audioIndex)
         let coverImage: UIImage = UIImage(named: coverImageName)!
+        profile_name.text = names[audioIndex - 1]
         profile_pic.image = coverImage
         
         var audioName = getAudioName(num: audioIndex)
         var audioPath = getAudiosDirectory().appendingPathComponent(audioName)
         do {
             try Player = AVAudioPlayer(contentsOf: audioPath)
-            Player.delegate = self
+//            Player.delegate = self
             Player.play()
+            print (audioIndex)
             alreadySeen.append(audioIndex)
-            if alreadySeen.count == 8 {
+            print (alreadySeen)
+            if alreadySeen.count == userCount {
                 alreadySeen = []
-                let alert = UIAlertController(title: "Want more?", message: "Currently these are all our recommendations, you might want to change the filter to see more", preferredStyle: UIAlertControllerStyle.alert)
-                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-                self.present(alert, animated: true, completion: nil)
+//                let alert = UIAlertController(title: "Want more?", message: "Currently these are all our recommendations, you might want to change the filter to see more", preferredStyle: UIAlertControllerStyle.alert)
+//                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+//                self.present(alert, animated: true, completion: nil)
             }
         }
         catch {
@@ -111,13 +129,13 @@ class MatchingViewController: UIViewController, AVAudioPlayerDelegate{
     @IBAction func playNextButton(_ sender: Any) {
         playNext()
     }
-    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
-        if flag {
-            self.playNext()
-        } else {
-            print ("failed")
-        }
-    }
+//    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+//        if flag {
+//            self.playNext()
+//        } else {
+//            print ("failed")
+//        }
+//    }
     /*
     // MARK: - Navigation
 
