@@ -1,6 +1,6 @@
 //
 //  ProfileViewController.swift
-//  Selfie
+//  Voime
 //
 //  Created by Tianyi Liu on 4/10/18.
 //  Copyright © 2018 subhb.org. All rights reserved.
@@ -23,7 +23,7 @@ class ProfileViewController: UIViewController {
     
     @IBAction func PlayEricIntro(_ sender: Any) {
         
-        let audiourl = URL(string: "file:///Users/tianyi/Documents/18Winter/SI660/voime/starter/Selfie/audios/voice4.mp3")
+        let audiourl = URL(string: "file:///Users/tianyi/Documents/18Winter/SI660/voime/starter/Voime/audios/voice4.mp3")
         do {
             try Player = AVAudioPlayer(contentsOf: audiourl!)
             
@@ -36,7 +36,7 @@ class ProfileViewController: UIViewController {
     
     @IBAction func playMusic(_ sender: Any) {
         
-        let audiourl = URL(string: "file:///Users/tianyi/Documents/18Winter/SI660/voime/starter/Selfie/audios/song1.mp3")
+        let audiourl = URL(string: "file:///Users/tianyi/Documents/18Winter/SI660/voime/starter/Voime/audios/song1.mp3")
         
         do {
             try Player = AVAudioPlayer(contentsOf: audiourl!)

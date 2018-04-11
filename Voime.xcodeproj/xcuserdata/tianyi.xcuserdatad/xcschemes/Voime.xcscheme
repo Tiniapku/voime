@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D37383DE19B07A75008C2DB6"
-               BuildableName = "Selfie.app"
-               BlueprintName = "Selfie"
-               ReferencedContainer = "container:Selfie.xcodeproj">
+               BuildableName = "Voime.app"
+               BlueprintName = "Voime"
+               ReferencedContainer = "container:Voime.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,9 +34,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D37383F019B07A75008C2DB6"
-               BuildableName = "SelfieTests.xctest"
-               BlueprintName = "SelfieTests"
-               ReferencedContainer = "container:Selfie.xcodeproj">
+               BuildableName = "VoimeTests.xctest"
+               BlueprintName = "VoimeTests"
+               ReferencedContainer = "container:Voime.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,9 +44,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D37383DE19B07A75008C2DB6"
-            BuildableName = "Selfie.app"
-            BlueprintName = "Selfie"
-            ReferencedContainer = "container:Selfie.xcodeproj">
+            BuildableName = "Voime.app"
+            BlueprintName = "Voime"
+            ReferencedContainer = "container:Voime.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -68,9 +68,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D37383DE19B07A75008C2DB6"
-            BuildableName = "Selfie.app"
-            BlueprintName = "Selfie"
-            ReferencedContainer = "container:Selfie.xcodeproj">
+            BuildableName = "Voime.app"
+            BlueprintName = "Voime"
+            ReferencedContainer = "container:Voime.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -87,9 +87,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D37383DE19B07A75008C2DB6"
-            BuildableName = "Selfie.app"
-            BlueprintName = "Selfie"
-            ReferencedContainer = "container:Selfie.xcodeproj">
+            BuildableName = "Voime.app"
+            BlueprintName = "Voime"
+            ReferencedContainer = "container:Voime.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

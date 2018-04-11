@@ -1,11 +1,10 @@
 //
 //  AudioRecorderViewController.swift
-//  Selfie
+//  Voime
 //
 //  Created by Tianyi Liu on 4/9/18.
 //  Copyright © 2018 subhb.org. All rights reserved.
 //
-
 import UIKit
 import AVFoundation
 
@@ -25,7 +24,7 @@ class AudioRecorderViewController: UIViewController, AVAudioRecorderDelegate {
     @IBOutlet weak var continueButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         recordingSession = AVAudioSession.sharedInstance()
         
         do {
@@ -55,7 +54,7 @@ class AudioRecorderViewController: UIViewController, AVAudioRecorderDelegate {
     func loadRecordingUI() {
         recordButton = UIButton(frame: CGRect(x: 84, y: 64, width: 160, height: 160))
         RecordReminder.text = "Record an audio to start Voime"
-//        recordButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.title1)
+        //        recordButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.title1)
         recordButton.setImage( #imageLiteral(resourceName: "voice"), for: .normal)
         recordButton.addTarget(self, action: #selector(recordTapped), for: .touchUpInside)
         view.addSubview(recordButton)
@@ -89,14 +88,14 @@ class AudioRecorderViewController: UIViewController, AVAudioRecorderDelegate {
         else if (count == 0){
             
             finishRecording(success: true)
-//            RecordReminder.text = "Tap to Re-record"
-//        continueButton.setTitleColor(UIColor.black, for: .normal)
+            //            RecordReminder.text = "Tap to Re-record"
+            //        continueButton.setTitleColor(UIColor.black, for: .normal)
             
         }
     }
     func getDocumentsDirectory() -> URL {
-//        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return URL(string: "file:///Users/tianyi/Documents/18Winter/SI660/voime/starter/Selfie/audios/user1")!
+        //        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return URL(string: "file:///Users/tianyi/Documents/18Winter/SI660/voime/starter/Voime/audios/user1")!
     }
     
     func finishRecording(success: Bool) {
@@ -130,13 +129,12 @@ class AudioRecorderViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

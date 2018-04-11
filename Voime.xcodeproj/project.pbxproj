@@ -13,13 +13,7 @@
 		056B952D207D7E0000741F89 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056B952C207D7E0000741F89 /* ContactsViewController.swift */; };
 		056B952F207D9FEF00741F89 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056B952E207D9FEF00741F89 /* ProfileViewController.swift */; };
 		05FE50C12071775900780487 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FE50C02071775900780487 /* Constants.swift */; };
-		C186CA0E19EA299B00E3B500 /* SelfieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C186CA0D19EA299B00E3B500 /* SelfieCollectionViewCell.swift */; };
-		C186CA1019EA34DF00E3B500 /* SelfieImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C186CA0F19EA34DF00E3B500 /* SelfieImage.swift */; };
-		C186CA1219EA80DB00E3B500 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C186CA1119EA80DB00E3B500 /* ComposeViewController.swift */; };
-		C186CA1619EA92C600E3B500 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C186CA1519EA92C600E3B500 /* DetailViewController.swift */; };
 		C1A1877419B619EE003D119F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A1877319B619EE003D119F /* Security.framework */; };
-		C1B77A6C1A1B98DB0024857B /* HTTPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B77A6B1A1B98DB0024857B /* HTTPHelper.swift */; };
-		C1F59B1719E4084C0083F33B /* KeychainAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F59B1619E4084C0083F33B /* KeychainAccess.swift */; };
 		D308C7FA19B4768300AE6BE5 /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = D308C7F319B4768300AE6BE5 /* AESCrypt.m */; };
 		D308C7FB19B4768300AE6BE5 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = D308C7F519B4768300AE6BE5 /* NSData+Base64.m */; };
 		D308C7FC19B4768300AE6BE5 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = D308C7F719B4768300AE6BE5 /* NSData+CommonCrypto.m */; };
@@ -28,8 +22,7 @@
 		D37383E719B07A75008C2DB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37383E619B07A75008C2DB6 /* ViewController.swift */; };
 		D37383EA19B07A75008C2DB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D37383E819B07A75008C2DB6 /* Main.storyboard */; };
 		D37383EC19B07A75008C2DB6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D37383EB19B07A75008C2DB6 /* Images.xcassets */; };
-		D37383F819B07A75008C2DB6 /* SelfieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37383F719B07A75008C2DB6 /* SelfieTests.swift */; };
-		D373840219B07C3B008C2DB6 /* SelfieCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D373840119B07C3B008C2DB6 /* SelfieCollectionViewController.swift */; };
+		D37383F819B07A75008C2DB6 /* VoimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37383F719B07A75008C2DB6 /* VoimeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,14 +42,8 @@
 		056B952C207D7E0000741F89 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		056B952E207D9FEF00741F89 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		05FE50C02071775900780487 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		C186CA0D19EA299B00E3B500 /* SelfieCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieCollectionViewCell.swift; sourceTree = "<group>"; };
-		C186CA0F19EA34DF00E3B500 /* SelfieImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieImage.swift; sourceTree = "<group>"; };
-		C186CA1119EA80DB00E3B500 /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
-		C186CA1519EA92C600E3B500 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C1A1877319B619EE003D119F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		C1B77A6B1A1B98DB0024857B /* HTTPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHelper.swift; sourceTree = "<group>"; };
-		C1F59B1619E4084C0083F33B /* KeychainAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainAccess.swift; sourceTree = "<group>"; };
-		D308C7AB19B44C0A00AE6BE5 /* Selfie-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Selfie-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		D308C7AB19B44C0A00AE6BE5 /* Voime-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Voime-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		D308C7F219B4768300AE6BE5 /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
 		D308C7F319B4768300AE6BE5 /* AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCrypt.m; sourceTree = "<group>"; };
 		D308C7F419B4768300AE6BE5 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
@@ -65,16 +52,15 @@
 		D308C7F719B4768300AE6BE5 /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
 		D308C7F819B4768300AE6BE5 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
 		D308C7F919B4768300AE6BE5 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
-		D37383DF19B07A75008C2DB6 /* Selfie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Selfie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D37383DF19B07A75008C2DB6 /* Voime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37383E319B07A75008C2DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D37383E419B07A75008C2DB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D37383E619B07A75008C2DB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D37383E919B07A75008C2DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D37383EB19B07A75008C2DB6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D37383F119B07A75008C2DB6 /* SelfieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelfieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D37383F119B07A75008C2DB6 /* VoimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37383F619B07A75008C2DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D37383F719B07A75008C2DB6 /* SelfieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieTests.swift; sourceTree = "<group>"; };
-		D373840119B07C3B008C2DB6 /* SelfieCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieCollectionViewController.swift; sourceTree = "<group>"; };
+		D37383F719B07A75008C2DB6 /* VoimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoimeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,8 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				C1A1877319B619EE003D119F /* Security.framework */,
-				D37383E119B07A75008C2DB6 /* Selfie */,
-				D37383F419B07A75008C2DB6 /* SelfieTests */,
+				D37383E119B07A75008C2DB6 /* Voime */,
+				D37383F419B07A75008C2DB6 /* VoimeTests */,
 				D37383E019B07A75008C2DB6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -132,54 +118,47 @@
 		D37383E019B07A75008C2DB6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D37383DF19B07A75008C2DB6 /* Selfie.app */,
-				D37383F119B07A75008C2DB6 /* SelfieTests.xctest */,
+				D37383DF19B07A75008C2DB6 /* Voime.app */,
+				D37383F119B07A75008C2DB6 /* VoimeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D37383E119B07A75008C2DB6 /* Selfie */ = {
+		D37383E119B07A75008C2DB6 /* Voime */ = {
 			isa = PBXGroup;
 			children = (
 				05FE50BF2071773A00780487 /* Util */,
 				D308C7F119B4768300AE6BE5 /* AESCrypt */,
-				C1B77A6B1A1B98DB0024857B /* HTTPHelper.swift */,
-				C1F59B1619E4084C0083F33B /* KeychainAccess.swift */,
 				D37383E419B07A75008C2DB6 /* AppDelegate.swift */,
 				D37383E619B07A75008C2DB6 /* ViewController.swift */,
-				D373840119B07C3B008C2DB6 /* SelfieCollectionViewController.swift */,
-				C186CA0D19EA299B00E3B500 /* SelfieCollectionViewCell.swift */,
-				C186CA0F19EA34DF00E3B500 /* SelfieImage.swift */,
-				C186CA1119EA80DB00E3B500 /* ComposeViewController.swift */,
-				C186CA1519EA92C600E3B500 /* DetailViewController.swift */,
 				056B9528207C5B1200741F89 /* MyNavigationViewController.swift */,
 				052ADB0F207B204900B17A9B /* AudioRecorderViewController.swift */,
 				056B952A207D57D200741F89 /* MatchingViewController.swift */,
 				056B952C207D7E0000741F89 /* ContactsViewController.swift */,
+				056B952E207D9FEF00741F89 /* ProfileViewController.swift */,
 				D37383E819B07A75008C2DB6 /* Main.storyboard */,
 				D37383EB19B07A75008C2DB6 /* Images.xcassets */,
 				D37383E219B07A75008C2DB6 /* Supporting Files */,
-				056B952E207D9FEF00741F89 /* ProfileViewController.swift */,
 			);
-			path = Selfie;
+			path = Voime;
 			sourceTree = "<group>";
 		};
 		D37383E219B07A75008C2DB6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D308C7AB19B44C0A00AE6BE5 /* Selfie-Bridging-Header.h */,
+				D308C7AB19B44C0A00AE6BE5 /* Voime-Bridging-Header.h */,
 				D37383E319B07A75008C2DB6 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D37383F419B07A75008C2DB6 /* SelfieTests */ = {
+		D37383F419B07A75008C2DB6 /* VoimeTests */ = {
 			isa = PBXGroup;
 			children = (
-				D37383F719B07A75008C2DB6 /* SelfieTests.swift */,
+				D37383F719B07A75008C2DB6 /* VoimeTests.swift */,
 				D37383F519B07A75008C2DB6 /* Supporting Files */,
 			);
-			path = SelfieTests;
+			path = VoimeTests;
 			sourceTree = "<group>";
 		};
 		D37383F519B07A75008C2DB6 /* Supporting Files */ = {
@@ -193,9 +172,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D37383DE19B07A75008C2DB6 /* Selfie */ = {
+		D37383DE19B07A75008C2DB6 /* Voime */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D37383FB19B07A75008C2DB6 /* Build configuration list for PBXNativeTarget "Selfie" */;
+			buildConfigurationList = D37383FB19B07A75008C2DB6 /* Build configuration list for PBXNativeTarget "Voime" */;
 			buildPhases = (
 				D37383DB19B07A75008C2DB6 /* Sources */,
 				D37383DC19B07A75008C2DB6 /* Frameworks */,
@@ -205,14 +184,14 @@
 			);
 			dependencies = (
 			);
-			name = Selfie;
+			name = Voime;
 			productName = Selfie;
-			productReference = D37383DF19B07A75008C2DB6 /* Selfie.app */;
+			productReference = D37383DF19B07A75008C2DB6 /* Voime.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D37383F019B07A75008C2DB6 /* SelfieTests */ = {
+		D37383F019B07A75008C2DB6 /* VoimeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D37383FE19B07A75008C2DB6 /* Build configuration list for PBXNativeTarget "SelfieTests" */;
+			buildConfigurationList = D37383FE19B07A75008C2DB6 /* Build configuration list for PBXNativeTarget "VoimeTests" */;
 			buildPhases = (
 				D37383ED19B07A75008C2DB6 /* Sources */,
 				D37383EE19B07A75008C2DB6 /* Frameworks */,
@@ -223,9 +202,9 @@
 			dependencies = (
 				D37383F319B07A75008C2DB6 /* PBXTargetDependency */,
 			);
-			name = SelfieTests;
+			name = VoimeTests;
 			productName = SelfieTests;
-			productReference = D37383F119B07A75008C2DB6 /* SelfieTests.xctest */;
+			productReference = D37383F119B07A75008C2DB6 /* VoimeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -249,7 +228,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D37383DA19B07A75008C2DB6 /* Build configuration list for PBXProject "Selfie" */;
+			buildConfigurationList = D37383DA19B07A75008C2DB6 /* Build configuration list for PBXProject "Voime" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -262,8 +241,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D37383DE19B07A75008C2DB6 /* Selfie */,
-				D37383F019B07A75008C2DB6 /* SelfieTests */,
+				D37383DE19B07A75008C2DB6 /* Voime */,
+				D37383F019B07A75008C2DB6 /* VoimeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -292,15 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C186CA1619EA92C600E3B500 /* DetailViewController.swift in Sources */,
-				C1B77A6C1A1B98DB0024857B /* HTTPHelper.swift in Sources */,
 				056B9529207C5B1200741F89 /* MyNavigationViewController.swift in Sources */,
-				D373840219B07C3B008C2DB6 /* SelfieCollectionViewController.swift in Sources */,
 				D37383E719B07A75008C2DB6 /* ViewController.swift in Sources */,
 				056B952D207D7E0000741F89 /* ContactsViewController.swift in Sources */,
 				D308C7FA19B4768300AE6BE5 /* AESCrypt.m in Sources */,
-				C186CA1219EA80DB00E3B500 /* ComposeViewController.swift in Sources */,
-				C186CA1019EA34DF00E3B500 /* SelfieImage.swift in Sources */,
 				056B952F207D9FEF00741F89 /* ProfileViewController.swift in Sources */,
 				D37383E519B07A75008C2DB6 /* AppDelegate.swift in Sources */,
 				052ADB10207B204900B17A9B /* AudioRecorderViewController.swift in Sources */,
@@ -309,8 +283,6 @@
 				056B952B207D57D200741F89 /* MatchingViewController.swift in Sources */,
 				D308C7FC19B4768300AE6BE5 /* NSData+CommonCrypto.m in Sources */,
 				05FE50C12071775900780487 /* Constants.swift in Sources */,
-				C1F59B1719E4084C0083F33B /* KeychainAccess.swift in Sources */,
-				C186CA0E19EA299B00E3B500 /* SelfieCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D37383F819B07A75008C2DB6 /* SelfieTests.swift in Sources */,
+				D37383F819B07A75008C2DB6 /* VoimeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,7 +299,7 @@
 /* Begin PBXTargetDependency section */
 		D37383F319B07A75008C2DB6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D37383DE19B07A75008C2DB6 /* Selfie */;
+			target = D37383DE19B07A75008C2DB6 /* Voime */;
 			targetProxy = D37383F219B07A75008C2DB6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -446,11 +418,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = Selfie/Info.plist;
+				INFOPLIST_FILE = Voime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.subhb.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Selfie-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Voime-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};
@@ -461,11 +433,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = Selfie/Info.plist;
+				INFOPLIST_FILE = Voime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.subhb.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Selfie-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Voime-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};
@@ -483,13 +455,13 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = SelfieTests/Info.plist;
+				INFOPLIST_FILE = VoimeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.subhb.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Selfie.app/Selfie";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Voime.app/Voime";
 			};
 			name = Debug;
 		};
@@ -501,20 +473,20 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = SelfieTests/Info.plist;
+				INFOPLIST_FILE = VoimeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.subhb.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Selfie.app/Selfie";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Voime.app/Voime";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D37383DA19B07A75008C2DB6 /* Build configuration list for PBXProject "Selfie" */ = {
+		D37383DA19B07A75008C2DB6 /* Build configuration list for PBXProject "Voime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D37383F919B07A75008C2DB6 /* Debug */,
@@ -523,7 +495,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D37383FB19B07A75008C2DB6 /* Build configuration list for PBXNativeTarget "Selfie" */ = {
+		D37383FB19B07A75008C2DB6 /* Build configuration list for PBXNativeTarget "Voime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D37383FC19B07A75008C2DB6 /* Debug */,
@@ -532,7 +504,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D37383FE19B07A75008C2DB6 /* Build configuration list for PBXNativeTarget "SelfieTests" */ = {
+		D37383FE19B07A75008C2DB6 /* Build configuration list for PBXNativeTarget "VoimeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D37383FF19B07A75008C2DB6 /* Debug */,

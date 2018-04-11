@@ -1,6 +1,6 @@
 //
 //  MyNavigationViewController.swift
-//  Selfie
+//  Voime
 //
 //  Created by Tianyi Liu on 4/9/18.
 //  Copyright © 2018 subhb.org. All rights reserved.

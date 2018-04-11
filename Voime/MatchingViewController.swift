@@ -1,6 +1,6 @@
 //
 //  MatchingViewController.swift
-//  Selfie
+//  Voime
 //
 //  Created by Tianyi Liu on 4/10/18.
 //  Copyright © 2018 subhb.org. All rights reserved.
@@ -65,7 +65,7 @@ class MatchingViewController: UIViewController {
     }
     func getAudiosDirectory() -> URL {
         //        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return URL(string: "file:///Users/tianyi/Documents/18Winter/SI660/voime/starter/Selfie/audios/")!
+        return URL(string: "file:///Users/tianyi/Documents/18Winter/SI660/voime/starter/Voime/audios/")!
     }
     
     func getProfileDirectory() -> String {

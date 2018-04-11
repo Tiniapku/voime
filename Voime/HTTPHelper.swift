@@ -1,6 +1,6 @@
 //
 //  HTTPHelper.swift
-//  Selfie
+//  Voime
 //
 //  Created by Subhransu Behera on 18/11/14.
 //  Copyright (c) 2014 subhb.org. All rights reserved.
@@ -42,22 +42,22 @@ struct HTTPHelper {
       }
       
       // 3. Set the correct Authorization header.
-      switch authType {
-      case .httpBasicAuth:
-        // Set BASIC authentication header
-        let basicAuthString = "\(HTTPHelper.API_AUTH_NAME):\(HTTPHelper.API_AUTH_PASSWORD)"
-        let utf8str = (basicAuthString).data(using: String.Encoding(rawValue: String.Encoding.utf8.rawValue))
-        let base64EncodedString = utf8str?.base64EncodedString(options: NSData.Base64EncodingOptions.init(rawValue: 0))
-        
-        request.addValue("Basic \(base64EncodedString!)", forHTTPHeaderField: "Authorization")
-      case .httpTokenAuth:
-        // Retreieve Auth_Token from Keychain
-        if let userToken = KeychainAccess.passwordForAccount("Auth_Token", service: "KeyChainService") as String? {
-          // Set Authorization header
-          request.addValue("Token token=\(userToken)", forHTTPHeaderField: "Authorization")
-        }
-      }
-      
+//      switch authType {
+//      case .httpBasicAuth:
+//        // Set BASIC authentication header
+//        let basicAuthString = "\(HTTPHelper.API_AUTH_NAME):\(HTTPHelper.API_AUTH_PASSWORD)"
+//        let utf8str = (basicAuthString).data(using: String.Encoding(rawValue: String.Encoding.utf8.rawValue))
+//        let base64EncodedString = utf8str?.base64EncodedString(options: NSData.Base64EncodingOptions.init(rawValue: 0))
+//
+//        request.addValue("Basic \(base64EncodedString!)", forHTTPHeaderField: "Authorization")
+//      case .httpTokenAuth:
+//        // Retreieve Auth_Token from Keychain
+//        if let userToken = "KeychainAccess.passwordForAccount("Auth_Token", service: "KeyChainService") as String?" {
+//          // Set Authorization header
+//          request.addValue("Token token=\(userToken)", forHTTPHeaderField: "Authorization")
+//        }
+//      }
+    
       return request
   }
   

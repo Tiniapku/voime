@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Selfie.xcodeproj">
+      location = "self:/Users/tianyi/Documents/18Winter/SI660/voime/starter/Voime.xcodeproj">
    </FileRef>
 </Workspace>
